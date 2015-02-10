@@ -1,0 +1,490 @@
+/*
+* Plugin Name: GT Shortcodes
+* Plugin URI: http://guuthemes.com
+* Description: An awesome selection of shortcodes from GuuThemes.
+* Version: 1.0
+* Author: GuuThemes
+* Author URI: http://guuthemes.com
+* License: GNU General Public License
+* License URI: https://www.gnu.org/licenses/gpl.html
+*/
+
+/*----------------------------------------------*/
+/*	Columns
+/*----------------------------------------------*/
+
+.one_half { 
+	width: 48%; 
+}
+
+.one_third { 
+	width: 30.66%; 
+}
+
+.one_fourth { 
+	width: 22%; 
+}
+
+.one_fifth { 
+	width: 16.8%; 
+}
+
+.one_sixth { 
+	width: 13.33%; 
+}
+
+.one_half,
+.one_third,
+.one_fourth,
+.one_fifth,
+.one_sixth {
+	position: relative;
+	margin-right: 4%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.first {
+	margin-left: 0!important;
+}
+
+.last {
+	margin-right:0 !important;
+}
+
+/*----------------------------------------------*/
+/*	Accordion
+/*----------------------------------------------*/
+
+.accordion-container {
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+.accordion-header {
+	background: #333;
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0 0 0 0;
+	padding: 15px;
+	border-radius: 2px;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.active-header {
+	color: #fff;
+}
+
+.inactive-header {
+	color: #333;
+	background: #ddd;
+	margin-bottom: 10px;
+}
+
+.inactive-header:hover {
+	color: #fff;
+	background: #333;
+}
+
+.accordion-content {
+	display: none;
+	padding: 5px 0 10px 0;
+	border-top: 0;
+}
+
+/*----------------------------------------------*/
+/*	Tabs
+/*----------------------------------------------*/
+
+ul.tabs {
+	margin: 10px 0 0 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	clear: both;
+}
+
+ul.tabs li {
+	background: #ddd;
+	float: left;
+	display: block;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: auto;
+	padding: 0;
+	margin: 0 10px 0 0;
+	overflow: hidden;
+	border-radius: 2px;
+	position: relative;
+}
+
+ul.tabs li a {
+	color: #333;
+	display: block; 
+	text-decoration: none;
+	width: auto;  
+	margin: 0;
+	padding: 15px;
+	font-size: 13px;
+	font-weight: 400; 
+	background: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+ul.tabs li a:hover {
+	background: #333;
+	color: #fff;
+}
+
+ul.tabs li a.active {
+	background: #333;
+	color: #fff!important;
+	position: relative;
+}
+
+ul.tabs-content { 
+	margin: 0;
+	padding: 20px 20px 20px 0; 
+	display: block;
+	list-style: none!important; 
+}
+
+ul.tabs-content > li { 
+	display: none; 
+	line-height: 25px;
+}
+
+ul.tabs-content > li.active { 
+	display: block; 
+}
+
+/* Clearfix for Tabs */
+ul.tabs:before,
+ul.tabs:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+
+ul.tabs:after {
+	clear: both;
+}
+
+ul.tabs {
+	zoom: 1;
+}
+
+/*----------------------------------------------*/
+/*	Pie Chart
+/*----------------------------------------------*/
+
+.easyPieChart {
+    position: relative;
+}
+
+.easyPieChart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chart {
+    display: inline-block;
+    margin: 15px;
+}
+
+.percentage, .label {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+.percentage span {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.label {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*----------------------------------------------*/
+/*	Pricing Tables
+/*----------------------------------------------*/
+
+.plan-features {
+	color: #666;
+	font-size: 14px;
+	text-transform: lowercase;
+	text-align: center;
+}
+
+.plan-features ul {
+	margin: 0;
+}
+
+.plan-features li {
+	padding: 10px 5px;
+	list-style: none;
+}
+
+.plan-price {
+	color: #333;
+	font-size: 40px;
+	font-weight: 400;
+	padding: 40px 30px 30px 30px;
+	text-align: center;
+}
+
+.plan-price span {
+	color: #999;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 400;
+	display: block;
+	margin-top: 15px;
+}
+
+#pricing-plan {
+	background: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#pricing-plan .plan-price {
+  	border-top: 1px solid #ddd;
+}
+
+.plan-title {
+  	color: #333;
+  	font-size: 20px;
+  	font-weight: 700;
+  	padding: 20px 20px 30px 20px;
+  	text-align: center;
+  	text-transform: uppercase;
+}
+
+.plan-title .fa {
+  	display: inline-block;
+  	margin-bottom: 20px;
+}
+
+.plan-sign-up {
+  	padding: 20px;
+}
+
+.sign-up-btn {
+	position: relative;
+	display: block;
+	background: #333;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 15px;
+	padding: 10px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.sign-up-btn:hover {
+	background: #dd3e3e;
+  	color: #fff;
+  	position: relative;
+}
+
+/*----------------------------------------------*/
+/*	Skillbars
+/*----------------------------------------------*/
+
+.skillbar  {
+	position:  relative;
+	display:  block;
+	margin-top: 50px;
+	margin-bottom:  20px;
+	width:  100%;
+	background:  #ddd;
+	height:  42px;
+	border-radius:  2px;
+	-moz-border-radius:  2px;
+	-webkit-border-radius:  2px;
+	-webkit-transition:  0.4s linear;
+	-moz-transition:  0.4s linear;
+	-ms-transition:  0.4s linear;
+	-o-transition:  0.4s linear;
+	transition:  0.4s linear;
+	-webkit-transition-property:  width,  background-color;
+	-moz-transition-property:  width,  background-color;
+	-ms-transition-property:  width,  background-color;
+	-o-transition-property:  width,  background-color;
+	transition-property:  width,  background-color;
+ }
+
+.skillbar-title  {
+	position:  absolute;
+	top:  0;
+	left:  0;
+	font-weight:  bold;
+	font-size:  13px;
+	color:  #333;
+	background:  #6adcfa;
+	-webkit-border-top-left-radius:  2px;
+	-webkit-border-bottom-left-radius:  2px;
+	-moz-border-radius-topleft:  2px;
+	-moz-border-radius-bottomleft:  2px;
+	border-top-left-radius:  2px;
+	border-bottom-left-radius:  2px;
+ }
+
+.skillbar-title em  {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	color: #999;
+	text-transform: lowercase;
+	position: relative;
+	margin-top: -35px;
+	display:  block;
+	height:  35px;
+	line-height:  35px;
+	-webkit-border-top-left-radius:  2px;
+	-webkit-border-bottom-left-radius:  2px;
+	-moz-border-radius-topleft:  2px;
+	-moz-border-radius-bottomleft:  2px;
+	border-top-left-radius:  2px;
+	border-bottom-left-radius:  2px;
+ }
+
+.skillbar-bar  {
+	height:  42px;
+	width:  0px;
+	-webkit-border-top-left-radius:  2px;
+	-webkit-border-bottom-left-radius:  2px;
+	-moz-border-radius-topleft:  2px;
+	-moz-border-radius-bottomleft:  2px;
+	border-top-left-radius:  2px;
+	border-bottom-left-radius:  2px;
+ }
+
+.skillbar-percent  {
+	position:  absolute;
+	right:  10px;
+	top:  0;
+	font-size:  12px;
+	height:  42px;
+	line-height:  42px;
+	color:  #444;
+	color:  rgba(0, 0, 0, 0.4);
+ }
+ 
+.no-percent .skillbar-percent  {
+	display: none;
+}
+
+.skillbar-title em span {
+	color: #333;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-left: 3px;
+}
+
+/*----------------------------------------------*/
+/*	Blockquote
+/*----------------------------------------------*/
+
+blockquote.large,
+blockquote.large p {
+	font-size: 25px;
+	line-height: 35px;
+	color: #999;
+	font-style: italic;
+}
+
+blockquote.large {
+	margin: 20px 0;
+	padding: 9px 20px 0 20px;
+	border-left: 3px solid #333!important;
+}
+
+blockquote.large cite {
+	display: block;
+	margin-top: 10px;
+	color: #333;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: right;
+}
+
+/*----------------------------------------------*/
+/*	Dropcap
+/*----------------------------------------------*/
+
+.dropcap {
+	color: #333;
+	font-size: 55px;
+	font-weight: 700;
+	padding: 0 7px 5px 0;
+	line-height: 1em;
+	float: left;
+}
+
+/*----------------------------------------------*/
+/*	Styled Paragraph
+/*----------------------------------------------*/
+
+.first-paragraph {
+	color: #666;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 35px;
+	margin-bottom: 30px;
+}
+
+/*----------------------------------------------*/
+/*	Media Queries
+/*----------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+	.one_half,
+	.one_third,
+	.one_fourth,
+	.one_fifth,
+	.one_sixth {
+		width: 100%;
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

@@ -1,0 +1,13 @@
+
+i.mce-i-gt_shortcodes_icon {
+    width: 20px;
+    height: 20px;
+    background: url('../images/gt_shortcodes_icon.png') 0 0 no-repeat;
+    padding: 0;
+    vertical-align: top;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: -2px;
+    padding-right: 2px
+}
